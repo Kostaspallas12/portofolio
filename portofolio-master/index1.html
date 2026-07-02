@@ -2,8 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTH28MSZ29"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DTH28MSZ29');
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
@@ -20,14 +29,15 @@
 </nav>
 
 <div class="hero">
-    <div class="hero-avatar">KP</div>
+    
+     <img src="profile.jpg" class="hero-avatar" alt="Konstantinos Pallas" style="object-fit: cover;">
     <div class="hero-text">
         <h1>Hi, I'm Konstantinos Pallas</h1>
         <p class="hero-role">Frontend Developer</p>
         <p class="hero-bio">I build fast, clean, and modern web applications using <strong>React.</strong></p>
         <div class="hero-btns">
             <a href="#projects" class="btn btn-primary">View My Projects</a>
-            <a href="cv.pdf" download class="btn btn-outline">Download CV</a>
+            <a href="cv.html" target="_blank" class="btn btn-outline">Download CV</a>
         </div>
     </div>
 </div>
@@ -71,7 +81,13 @@
         <div class="project-card">
             <div class="project-thumb"></div>
             <div class="project-body">
-                <h3>Coming Soon</h3>
+                <h3>SiteCheck</h3>
+                <p>Full Security, SEO, Performance, Accessibility analysis & uptime monitoring for websites</p>
+                <span>TypeScript, Java, Tailwind, React</span>
+                <div class="project-btns">
+                    <a href="https://sitecheck-gr-production.up.railway.app/" target="_blank" class="btn btn-primary">Live Demo</a>
+                    <a href="https://github.com/Kostaspallas12/sitecheck-gr" target="_blank" class="btn btn-outline">GitHub</a>
+                </div>
             </div>
         </div>
 

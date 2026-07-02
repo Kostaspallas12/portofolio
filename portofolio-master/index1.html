@@ -20,8 +20,9 @@
 <body>
 
 <nav>
-    <div class="logo">Konstantinos Pallas</div>
+    <div class="logo" id="logo-link">Konstantinos Pallas</div>
     <ul>
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -162,6 +163,30 @@
 <footer>
     <p>© 2026 Konstantinos Pallas</p>
 </footer>
+
+<script>
+    document.getElementById('logo-link').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const navLinks = document.querySelectorAll('nav ul a[href^="#"]');
+    const sections = Array.from(navLinks)
+        .map(link => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean);
+
+    const spyObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                navLinks.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+                });
+            }
+        });
+    }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+    sections.forEach(section => spyObserver.observe(section));
+</script>
 
 </body>
 </html>

@@ -300,6 +300,15 @@
     body { background: white; padding: 0; }
     .print-bar { display: none; }
     .page { box-shadow: none; border-radius: 0; }
+
+    .header { padding: 28px 52px 22px; }
+    .body { min-height: auto; }
+    .main { padding: 26px 52px; }
+    .side { padding: 26px 32px; }
+    .section { margin-bottom: 20px; }
+    .section-title { margin-bottom: 12px; }
+    .project { margin-bottom: 12px; padding-bottom: 12px; }
+    .skill-item { margin-bottom: 10px; }
   }
 </style>
 </head>
@@ -352,6 +361,18 @@
 
         <div class="project">
           <div class="project-header">
+            <div class="project-name">SiteCheck</div>
+            <div class="project-links">
+              <a href="https://sitecheck-gr-production.up.railway.app/" target="_blank" class="project-link">Live</a>
+              <a href="https://github.com/Kostaspallas12/sitecheck-gr" target="_blank" class="project-link">GitHub</a>
+            </div>
+          </div>
+          <div class="project-tech">TypeScript · React · Tailwind</div>
+          <div class="project-desc">Full website audit tool: Security, SEO, Performance & Accessibility analysis with uptime monitoring for websites.</div>
+        </div>
+
+        <div class="project">
+          <div class="project-header">
             <div class="project-name">CryptoIntel</div>
             <div class="project-links">
               <a href="https://cryptointel1.firebaseapp.com/" target="_blank" class="project-link">Live</a>
@@ -371,7 +392,7 @@
             </div>
           </div>
           <div class="project-tech">HTML · CSS · JavaScript</div>
-          <div class="project-desc">A travel planning web application for exploring Greek destinations, with interactive UI and clean, responsive design.</div>
+          <div class="project-desc">Road trip planner for Greece with automatic route, fuel & toll cost calculations and personalized destination itineraries based on interests and budget.</div>
         </div>
 
       </div>
@@ -401,7 +422,17 @@
         </div>
 
         <div class="skill-item">
-          <div class="skill-label">React <span class="skill-level">Learning</span></div>
+          <div class="skill-label">TypeScript <span class="skill-level">learning</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:35%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-label">React <span class="skill-level">learning</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:35%"></div></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-label">Tailwind <span class="skill-level">learning</span></div>
           <div class="skill-bar"><div class="skill-fill" style="width:35%"></div></div>
         </div>
 
@@ -429,7 +460,7 @@
           Greek <span class="lang-level">Native</span>
         </div>
         <div class="lang-item">
-          English <span class="lang-level">Lower</span>
+          English <span class="lang-level">B2</span>
         </div>
       </div>
 

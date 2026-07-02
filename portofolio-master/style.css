@@ -190,6 +190,8 @@ section h2 {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -208,6 +210,9 @@ section h2 {
 
 .project-body {
     padding: 14px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .project-body h3 {
@@ -232,6 +237,7 @@ section h2 {
 .project-btns {
     display: flex;
     gap: 8px;
+    margin-top: auto;
 }
 
 .project-btns .btn {

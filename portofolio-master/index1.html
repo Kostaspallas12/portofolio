@@ -186,6 +186,14 @@
     }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
 
     sections.forEach(section => spyObserver.observe(section));
+
+    const lastLink = navLinks[navLinks.length - 1];
+    window.addEventListener('scroll', () => {
+        const atBottom = window.innerHeight + Math.ceil(window.scrollY) >= document.documentElement.scrollHeight;
+        if (atBottom) {
+            navLinks.forEach(link => link.classList.toggle('active', link === lastLink));
+        }
+    }, { passive: true });
 </script>
 
 </body>

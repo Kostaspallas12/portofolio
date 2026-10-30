@@ -329,7 +329,7 @@
   <!-- HEADER -->
   <div class="header">
     <div class="header-name">Konstantinos Pallas</div>
-    <div class="header-role">Frontend Developer</div>
+    <div class="header-role">Full-Stack Developer</div>
     <div class="header-contacts">
       <a href="mailto:pallaskostas675@gmail.com" class="contact-item">
         <svg class="contact-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
@@ -353,11 +353,23 @@
 
       <div class="section">
         <div class="section-title">About</div>
-        <p class="about-text">Self-taught frontend developer with a passion for building clean, fast, and user-friendly web applications. I focus on writing readable, maintainable code and I'm always looking to learn and grow. Currently seeking my first opportunity in a professional development environment.</p>
+        <p class="about-text">Full-stack developer who builds complete web applications on my own: the interface, API routes and serverless functions, the database with its access rules, authentication, and deployment. My projects include a coaching platform with real-time chat and WebRTC video calls, and a website audit tool with DNS ownership checks, scheduled scans and email alerts. I focus on security and clean, maintainable code.</p>
       </div>
 
       <div class="section">
         <div class="section-title">Projects</div>
+
+        <div class="project">
+          <div class="project-header">
+            <div class="project-name">FormLog</div>
+            <div class="project-links">
+              <a href="https://formlog-rust.vercel.app" target="_blank" class="project-link">Live</a>
+              <a href="https://github.com/Kostaspallas12/formlog-app" target="_blank" class="project-link">GitHub</a>
+            </div>
+          </div>
+          <div class="project-tech">Next.js · React · Supabase (PostgreSQL) · WebRTC</div>
+          <div class="project-desc">Platform for online fitness coaches: athlete check-ins with progress photos and questionnaires, real-time chat, voice notes and WebRTC video calls (STUN/TURN), PDF plans and ZIP exports. PostgreSQL schema built over 30 migrations, with row-level security policies and secured database functions, tested against 120+ attack scenarios.</div>
+        </div>
 
         <div class="project">
           <div class="project-header">
@@ -367,8 +379,8 @@
               <a href="https://github.com/Kostaspallas12/sitecheck-gr" target="_blank" class="project-link">GitHub</a>
             </div>
           </div>
-          <div class="project-tech">TypeScript · React · Tailwind</div>
-          <div class="project-desc">Full website audit tool: Security, SEO, Performance & Accessibility analysis with uptime monitoring for websites.</div>
+          <div class="project-tech">Next.js · TypeScript · Tailwind · Firebase</div>
+          <div class="project-desc">Website audit tool: verifies site ownership via DNS, then analyses security headers, SSL certificates, SEO, performance (Google PageSpeed) and accessibility. Around 15 API routes, cron-based rescans and uptime checks, email alerts, server-side sessions, rate limiting and SSRF protection. Greek and English.</div>
         </div>
 
         <div class="project">
@@ -380,7 +392,7 @@
             </div>
           </div>
           <div class="project-tech">HTML · CSS · JavaScript · Firebase</div>
-          <div class="project-desc">Crypto market analysis & portfolio tracker with real-time prices via Binance WebSocket, technical analysis (RSI, MACD, Bollinger Bands), price alerts, and Google authentication with Firestore sync.</div>
+          <div class="project-desc">Crypto market analysis & portfolio tracker with real-time prices via Binance WebSocket (with automatic reconnect), technical indicators calculated in the app (RSI, MACD, EMA, Bollinger Bands), browser notifications for price alerts, and Google authentication with Firestore sync.</div>
         </div>
 
         <div class="project">
@@ -392,7 +404,7 @@
             </div>
           </div>
           <div class="project-tech">HTML · CSS · JavaScript</div>
-          <div class="project-desc">Road trip planner for Greece with automatic route, fuel & toll cost calculations and personalized destination itineraries based on interests and budget.</div>
+          <div class="project-desc">Road trip planner for Greece with automatic route, fuel & toll cost calculations and personalized itineraries based on interests and budget. Greek and English, PDF export, and a Netlify serverless function that keeps the maps API key off the browser.</div>
         </div>
 
       </div>
@@ -444,11 +456,34 @@
       </div>
 
       <div class="section">
+        <div class="section-title">Core Skills</div>
+        <div class="tag-list">
+          <span class="tag">Next.js &amp; React</span>
+          <span class="tag">API routes</span>
+          <span class="tag">Serverless functions</span>
+          <span class="tag">Cron jobs</span>
+          <span class="tag">PostgreSQL &amp; RLS</span>
+          <span class="tag">Firestore</span>
+          <span class="tag">Authentication</span>
+          <span class="tag">Rate limiting</span>
+          <span class="tag">SSRF protection</span>
+          <span class="tag">WebSockets</span>
+          <span class="tag">WebRTC</span>
+          <span class="tag">Realtime sync</span>
+          <span class="tag">PDF generation</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">i18n (EL/EN)</span>
+        </div>
+      </div>
+
+      <div class="section">
         <div class="section-title">Tools</div>
         <div class="tag-list">
           <span class="tag">Git</span>
           <span class="tag">GitHub</span>
           <span class="tag">Netlify</span>
+          <span class="tag">Vercel</span>
+          <span class="tag">Supabase</span>
           <span class="tag">Firebase</span>
           <span class="tag">VS Code</span>
         </div>
